@@ -12,7 +12,6 @@ import { Product } from './types/product.interface';
 export class CatalogPageComponent implements OnInit {
   private catalogService = inject(CatalogService);
 
-
   ngOnInit(): void {
       this.catalogService.fetchProduct().subscribe((data: Product[]) => {
         console.log(data);
