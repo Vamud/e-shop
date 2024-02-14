@@ -1,2 +1,8 @@
-<h1>{{ title }}</h1>
-<mat-slide-toggle>Toggle me!</mat-slide-toggle>
+<mat-toolbar>
+  <a mat-icon-button color="primary" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+    <mat-icon>home</mat-icon>
+  </a>
+  <a mat-button routerLink="/catalog" routerLinkActive="active" ariaCurrentWhenActive="page">Catalog</a>
+  <a mat-button routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a>
+</mat-toolbar>
+<router-outlet></router-outlet>
